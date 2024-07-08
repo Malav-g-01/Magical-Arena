@@ -55,6 +55,26 @@ public class Player {
         }		
 	}
 	
+	
+	public void reduceHealth(int damage) {
+        if (damage < 0) {
+            throw new IllegalArgumentException("Damage cannot be negative");
+        }
+        this.health = Math.max(0, this.health - damage);
+    }
+	
+	public boolean isAlive() {
+        return this.health > 0;
+    }
+
+    public int calculateDamage(int diceRoll) {
+        return this.attack * diceRoll;
+    }
+
+    public int calculateDefense(int diceRoll) {
+        return this.strength * diceRoll;
+    }
+	
 	@Override
     public String toString() {
         return String.format("%s [Health: %d, Strength: %d, Attack: %d]", name, health, strength, attack);
