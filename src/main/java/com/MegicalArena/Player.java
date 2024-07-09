@@ -49,6 +49,10 @@ public class Player {
 		this.attack = attack;
 	}
 
+	public Player() {
+
+	}
+
 	private void validatePlayer(Integer health, Integer strength, Integer attack) {
 		if (health <= 0 || strength <= 0 || attack <= 0) {
             throw new IllegalArgumentException("Health, strength, and attack must be positive integers");
