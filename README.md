@@ -28,7 +28,7 @@ Ensure you have the following installed:
 To run the application, execute the following command:
 
 ```
-mvn exec:java -Dexec.mainClass="com.magicalarena.MagicalArena"
+mvn exec:java -Dexec.mainClass="com.MegicalArena.MagicalArena"
 ```
 
 ### Running Tests
