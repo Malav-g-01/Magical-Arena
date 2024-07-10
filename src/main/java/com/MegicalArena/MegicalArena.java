@@ -30,7 +30,8 @@ public class MegicalArena {
 		System.out.println(loser.getName() + " has been defeated. " + winner.getName() + " wins!");
 	}
 
-	private static void playTurn(Player attacker, Player defender, Dice dice) {
+	// will compute the damage given to defender
+	protected static void playTurn(Player attacker, Player defender, Dice dice) {
 		int attackDiceRoll = dice.roll();
 		int defenseDiceRoll = dice.roll();
 
