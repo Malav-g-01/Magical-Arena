@@ -15,8 +15,8 @@ Ensure you have the following installed:
 
 1. Clone the repository:
    ```
-   git clone https://github.com/your-repo/magical-arena.git
-   cd magical-arena
+   git clone https://github.com/Malav-g-01/Magical-Arena.git
+   cd Magical-Arena
    ```
 2. Build the project:
    ```
